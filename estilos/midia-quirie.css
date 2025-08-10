@@ -11,14 +11,16 @@ para pc: 992 ate 1200
 para telas muito mairores: acima de 1200
 */
 @media screen and (min-width: 768px) and (max-width: 992px){
+    /*Confugurando altura para tablet*/
     body{
         background-image: linear-gradient(to top,#49a09d,#5f2c82);
     }
    section#login{
     width:80vw;
+    height: 270px;
    }
    section#login > div#imagem{
-    float: left;
+    float: right;
     width: 30%;
     height: 100%;
    }
@@ -28,11 +30,13 @@ para telas muito mairores: acima de 1200
    }
 }
 @media screen and (min-width: 992px){
+     /*Confugurando altura para computadores*/
     body{
         background-image: linear-gradient(to top, #49a09d,#5f2c82);
     }
     section#login{
-        width: 990px;
+        width: 900px;
+        height: 330px;
     }
     section#login > div#imagem{
         float: left;
@@ -40,7 +44,12 @@ para telas muito mairores: acima de 1200
         height: 100%;
     }
     section#login > div#formulario{
-        float: right;
+        float: left;
         width: 50%;
     }
+    div#formulario > p{
+        font-size: 1.2em;
+        margin: 2px;
+    }
+   
 }
